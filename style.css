@@ -8,9 +8,13 @@
 /* BODY */
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to bottom, #63c0ee, #001554);
+  background: linear-gradient(to bottom, #001554, #60c8fd); /* to bottom, #63c0ee, #001554); */
   color: #ffffff;
   padding: 20px;
+
+  min-height: 100vh;              /* 🔥 fills full screen */
+  background-repeat: no-repeat;   /* 🔥 prevents repeating */
+  background-attachment: fixed;   /* 🔥 removes layered effect */
 }
 
 /* NAVBAR */
@@ -24,14 +28,24 @@ body {
 
 #navbar a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   font-size: 14px;
   transition: 0.3s;
+
+  /* added button look */
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  background: transparent;
 }
 
 #navbar a:hover {
-  color: #fff;
+  color: #000000;
   letter-spacing: 1px;
+
+  /* added hover button effect */
+  background: #ffffff;
+  transform: translateY(-2px);
 }
 
 /* HEADINGS */
@@ -42,11 +56,35 @@ h1 {
   margin-bottom: 10px;
 }
 
+h3 {
+  text-align: center;
+}
+
 #subtitle {
   text-align: center;
   color: #aaa;
-  margin-bottom: 40px;
 }
+
+#date {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 40px;
+  text-size-adjust: 15px;
+}
+
+
+.intro {
+  text-align: center;
+  padding: 2px;
+  width: 1100px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(0, 0, 119, 0.213);
+   line-height: 1.8;
+}
+
+
 
 /* LETTER TITLE */
 #letter {
@@ -167,50 +205,32 @@ h1 {
   display: block;
   object-fit: cover;
 }
-/* 📸 September */
-.p-sep {
+
+.p-feb, .p-mar, .p-idk, .p-sep, .p-nov, .p-dec {
   width: 160px;   /* smaller */
   height: 500px;
 }
-
-/* 📸 October */
-.p-oct {
+.p-oct, .p-jan, .p-feb2, .p-jan2 {
   width: 350px;   /* bigger */
   height: 500px;
 }
 
-/* 📸 November */
-.p-nov {
-  width: 160x;   /* smallest */
-  height: 500px;
+.p-c1, .p-c2, .p-c3, .p-c4, .p-c5, .p-c6, .p-c8, .p-c10, .p-c12 {
+  width: 300px;   /* bigger */
+  height: 250px;
 }
 
-.p-dec {
-  width: 160px;   /* smaller */
-  height: 500px;
+.p-d1, .p-d3, .p-d6, .p-d7, .p-d10, .p-d11, .p-d12 {
+  width: 250px;   /* bigger */
+  height: 350px;
 }
 
-.p-jan {
-  width: 350px;   /* bigger */
-  height: 500px;
+.p-d2, .p-d4, .p-d5, .p-d8, .p-d9 {
+  width: 400px;   /* bigger */
+  height: 350px;
 }
 
-.p-feb {
-  width: 160px;   /* smaller */
-  height: 500px;
-}
-
-.p-mar {
-  width: 160px;   /* smaller */
-  height: 500px;
-}
-
-.p-idk {
-  width: 160px;   /* smaller */
-  height: 500px;
-}
-
-.p-feb2 {
-    width: 350px;   /* bigger */
-    height: 500px;
+.p-j1, .p-j4, .p-j5, .p-j6 {
+  width: 370px;   /* LANDSCAPE */
+  height: 300px;
 }
