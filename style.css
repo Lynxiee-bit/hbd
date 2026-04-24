@@ -234,3 +234,44 @@ h3 {
   width: 370px;   /* LANDSCAPE */
   height: 300px;
 }
+
+/* RESPONSIVE FIX (MOBILE FRIENDLY) */
+@media (max-width: 768px) {
+
+  /* intro box */
+  .intro {
+    width: 100%;
+  }
+
+  /* cards become flexible instead of fixed size */
+  .card {
+    width: 45%;
+    height: auto;
+  }
+
+  /* override large custom image sizes */
+  .p-feb, .p-mar, .p-idk, .p-sep, .p-nov, .p-dec,
+  .p-oct, .p-jan, .p-feb2, .p-jan2,
+  .p-c1, .p-c2, .p-c3, .p-c4, .p-c5, .p-c6, .p-c8, .p-c10, .p-c12,
+  .p-d1, .p-d3, .p-d6, .p-d7, .p-d10, .p-d11, .p-d12,
+  .p-d2, .p-d4, .p-d5, .p-d8, .p-d9,
+  .p-j1, .p-j4, .p-j5, .p-j6 {
+    width: 100%;
+    height: auto;
+  }
+
+  /* navbar spacing adjustment */
+  #navbar {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  /* heading scaling */
+  h1 {
+    font-size: 22px;
+  }
+
+  .letter {
+    width: 100%;
+  }
+}
