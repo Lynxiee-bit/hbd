@@ -99,9 +99,14 @@ h3 {
 }
 
 .cover {
-  width: 180px;
+  width: 100px;
   border-radius: 12px;
   margin-bottom: 10px;
+}
+
+.lettercover {
+  width: 50px;
+  height: 50px;
 }
 
 .player h2 {
